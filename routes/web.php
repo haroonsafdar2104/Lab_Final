@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\GaurantorController;
+use App\Http\Controllers\CustomerController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +20,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('city/read', [CityController::class, 'index'])->name('index');
+Route::get('customer/read', [CustomerController::class, 'index']);
+Route::get('product/read', [ProductController::class, 'index']);
+Route::get('gaurantor/read', [GaurantorController::class, 'index']);
+Route::get('purchase/read', [PurchaseController::class, 'index']);
