@@ -48,7 +48,7 @@ width:200px;
     <a href="{{ url('gaurantor/read') }}" class="btn btn-success btn-lg btn-block custom-btn">Gaurantor</a>
   </div>
   <div class="col-md-3 mb-4">
-    <a href="{{ url('purchase/read') }}" class="btn btn-success btn-lg btn-block custom-btn">purchase</a>
+    <a href="{{ url('purchase/create') }}" class="btn btn-success btn-lg btn-block custom-btn">purchase</a>
   </div>
 </div>
 </div>

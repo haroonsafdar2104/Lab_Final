@@ -27,15 +27,15 @@
         </select>
         </br>
         <label>Gaurantor Name</label></br>
-        <select id="gaurantor" name="Gaurantor_id">
+        <select id="gaurantor" name="gaurantor_id">
         @foreach(App\Models\Gaurantor::all() as $gaur)
         <option value="{{$gaur->id}}">
         {{$gaur->name}}
         </option>
         @endforeach
         </select></br>
-        <label>Password</label></br>
-        <select id="customer" name="customer_id">
+        <label>Product</label></br>
+        <select id="product" name="product_id">
         @foreach(App\Models\Product::all() as $product)
         <option value="{{$product->id}}">
         {{$product->name}}

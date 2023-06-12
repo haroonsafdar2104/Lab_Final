@@ -27,4 +27,5 @@ Route::get('city/read', [CityController::class, 'index'])->name('index');
 Route::get('customer/read', [CustomerController::class, 'index']);
 Route::get('product/read', [ProductController::class, 'index']);
 Route::get('gaurantor/read', [GaurantorController::class, 'index']);
-Route::get('purchase/read', [PurchaseController::class, 'index']);
+Route::get('purchase/create', [PurchaseController::class, 'create'])->name('create');
+Route::post('customer_product/store',[PurchaseController::class, 'store'])->name('store');
